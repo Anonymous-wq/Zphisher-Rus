@@ -283,7 +283,7 @@ start_serveo
 start_serveo() {
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Загруза страницы...\e[0m\e[1;92m(\e[0m\e[1;96mlocalhost:$port\e[0m\e[1;92m)\e[0m\n"
-cd websites/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
+/$server && php -S 127.0.0.1:$port > /dev/null 2>&1 &
 sleep 2
 printf "\e[0m\n"
 printf " \e[1;31m[\e[0m\e[1;77m~\e[0m\e[1;31m]\e[0m\e[1;92m Launching Serveo ..\e[0m\n"
